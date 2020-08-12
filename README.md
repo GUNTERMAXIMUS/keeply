@@ -1,6 +1,25 @@
 # keeply
 > Keeloger for linux and windows with optional crypted messages (unique key and/or steganography) and screenshots to your transfer method and decrypted function to read i
 
+## Features
+* Transfer method: e-mail
+* E-mail delivery supports SSL-TLS/STARTTLS.
+* Captures mouse cursor
+* Screenshots
+* Keyword
+* 
+
+## Developing
+* Invisible in task manager
+* Capture WebCam
+* Capture microphone
+* Send logs: via ftp
+* Send logs: Automatically flushes logs to a USB stick or to External HardDisk.
+* Takes screenshot with predefined keywords
+* Takes screenshot with predefined number of clicks
+* Auto Uninstall at a specific date
+* File monitoring - records paths and names of files or directories that are created, deleted or renamed.
+
 ## Installation & Development setup
 To install all development dependencies
 Windows: & Linux:
