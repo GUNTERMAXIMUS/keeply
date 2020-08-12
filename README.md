@@ -1,4 +1,6 @@
 # keeply
+[![Github All Releases](https://img.shields.io/github/downloads/atom/atom/total.svg)](https://github.com/Y4rd13/keeply)
+
 > Keeloger for linux and windows with optional crypted messages (unique key and/or steganography) and screenshots to your transfer method and decrypted function to read i
 
 ## Features
