@@ -7,7 +7,7 @@
 * Captures mouse cursor
 * Screenshots
 * Keyword
-* 
+* ... details here!
 
 ## Developing
 * Invisible in task manager
@@ -19,6 +19,7 @@
 * Takes screenshot with predefined number of clicks
 * Auto Uninstall at a specific date
 * File monitoring - records paths and names of files or directories that are created, deleted or renamed.
+* Steganography
 
 ## Installation & Development setup
 To install all development dependencies
