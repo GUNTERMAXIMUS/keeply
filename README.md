@@ -1,6 +1,5 @@
 # keeply
 [![Unstable](https://poser.pugx.org/ali-irawan/xtra/v/unstable.svg)](https://poser.pugx.org/ali-irawan/xtra/v/unstable.svg)
-[![Issues](https://img.shields.io/github/issues-raw/tterb/PlayMusic.svg?maxAge=25000)](https://github.com/Y4rd13/keeply/issues)  
 
 > Keeloger for linux and windows with optional crypted messages (unique key and/or steganography) and screenshots to your transfer method and decrypted function to read i
 
